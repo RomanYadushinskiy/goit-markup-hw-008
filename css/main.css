@@ -90,10 +90,10 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo--header {
+.logo-header {
   color: var(--text-studio-color);
 }
-.logo--footer {
+.logo-footer {
   color: var(--rpimary-color);
 }
 
@@ -125,17 +125,18 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-button__list {
+.portfolio-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.portfolio-button__list .button-portfolio--current {
+
+.portfolio-button .button-portfolio--current {
   color: var(--rpimary-color);
   background-color: var(--accent-color);
 }
@@ -264,7 +265,7 @@ button {
   text-transform: uppercase;
 }
 
-.feutures__title {
+.feutures-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -318,7 +319,7 @@ button {
   color: var(--rpimary-color);
 }
 
-.team-social__list {
+.team-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,7 +734,7 @@ button {
   background-color: var(--second-section-color);
 }
 
-.feutures__text {
+.feutures-text {
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
