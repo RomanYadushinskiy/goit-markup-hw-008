@@ -510,6 +510,11 @@ button {
   background-color: transparent;
   outline: transparent;
 }
+@media screen and (max-width: 479px) {
+  .footer-form__input {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     width: 358px;
