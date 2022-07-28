@@ -503,17 +503,12 @@ button {
 .footer-form__input {
   color: var(--rpimary-color);
   padding-left: 16px;
-  width: 450px;
+  width: calc(100vw - 30px);
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-}
-@media screen and (max-width: 479px) {
-  .footer-form__input {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {

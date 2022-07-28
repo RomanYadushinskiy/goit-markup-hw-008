@@ -19,16 +19,12 @@
 .footer-form__input {
     color: var(--rpimary-color);
     padding-left: 16px;
-    width: 450px;
+    width: calc(100vw - 15px * 2);
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-
-    @media screen and (max-width: 479px) {
-        width: 100%;
-    }
 
     @media screen and (min-width: 1200px) {
         width: 358px;
