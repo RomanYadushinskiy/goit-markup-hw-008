@@ -1,4 +1,14 @@
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .portfolio-card__item {
+    width: 450px;
     border: 1px solid #EEEEEE;
 
     transition: box-shadow var(--anim-slow);
@@ -9,9 +19,15 @@
                     0px 4px 4px rgba(0, 0, 0, 0.06),
                     1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
-
-
 
 .portfolio-card__site {
     padding: 20px 24px;

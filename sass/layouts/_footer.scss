@@ -5,8 +5,30 @@
 
 .footer-container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-direction:row;
+        align-items: baseline;
+    }
 }
 
 .footer-mail {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 
 
 </head>
@@ -34,7 +34,7 @@
                 </svg>
             </button>
 
-            <!-- mobile-menu -->
+
 
             <div class="mobile-menu" data-menu>
                 <ul class="mobile-menu-nav">
@@ -42,19 +42,19 @@
                         <a class="mobile-menu-nav-link current" href="">Студия</a>
                     </li>
                     <li class="mobile-menu-nav-item">
-                        <a class="mobile-menu-nav-link" href=""></a>Портфолио
+                        <a class="mobile-menu-nav-link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="mobile-menu-nav-item">
-                        <a class="mobile-menu-nav-link" href=""></a>Контакты
+                        <a class="mobile-menu-nav-link" href="">Контакты</a>
                     </li>
                 </ul>
 
                 <ul class="mobile-menu-contacts">
                     <li class="mobile-menu-contacts-item">
-                        <a class="mobile-menu-contacts-link accent href=" tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mobile-menu-contacts-link accent" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                     <li class="mobile-menu-contacts-item">
-                        <a class="mobile-menu-contacts-link href=" emailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="mobile-menu-contacts-link" href="emailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                 </ul>
 
@@ -74,7 +74,7 @@
                 </ul>
             </div>
 
-            <!-- <nav class="main-nav">
+            <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a class="main-nav__link main-nav__link--current" href="">Студия</a>
@@ -86,11 +86,9 @@
                         <a class="main-nav__link" href="">Контакты</a>
                     </li>
                 </ul>
-            </nav> -->
+            </nav>
 
-            <!--Контакти-->
-
-            <!-- <ul class="nav-contacts">
+            <ul class="nav-contacts">
                 <li class="nav-contacts__item">
                     <a class="nav-contacts__link" href="emailto:info@devstudio.com">
                         <svg class="nav-contacts__icon" width="16" height="12">
@@ -103,7 +101,7 @@
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
-            </ul> -->
+            </ul>
 
         </div>
 
@@ -114,7 +112,7 @@
         <!--hero-->
         <section class="hero hero-overlay">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -124,9 +122,9 @@
             <div class="container">
 
                 <h2 class="visually-hidden">Особенности</h2>
-                <ul class="card-set">
+                <ul class="features__list">
 
-                    <li class="features__item card-set__item">
+                    <li class="features__item">
                         <div class="features__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#antenna"></use>
@@ -139,7 +137,7 @@
 
                     </li>
 
-                    <li class="features__item card-set__item">
+                    <li class="features__item">
                         <div class="features__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#clock"></use>
@@ -152,7 +150,7 @@
                         </p>
                     </li>
 
-                    <li class="features__item card-set__item">
+                    <li class="features__item">
                         <div class="features__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#diagram"></use>
@@ -164,7 +162,7 @@
                         </p>
                     </li>
 
-                    <li class="features__item card-set__item">
+                    <li class="features__item">
                         <div class="features__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#astronaut"></use>
@@ -184,22 +182,64 @@
         <section class="section activity">
             <div class="container">
                 <h2 class="activity__title">Чем мы занимаемся</h2>
-                <ul class="activity__list card-set">
-                    <li class="card-set__item">
+                <ul class="activity__list">
+                    <li class="activity__item">
                         <div class="activity__img">
-                            <img src="./images/activity/desktop.jpg" alt="компютер" width="370" height="294">
+
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/activity1_lg.jpg 1x, ./images/activity/activity1_lg@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/activity/activity1_md.jpg 1x, ./images/activity/activity1_md@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/activity/activity1_sm.jpg 1x, ./images/activity/activity1_sm@2x.jpg 2x"
+                                    type="image/jpg">
+                                <img src="./images/activity/activity1_sm.jpg" alt="Десктопные приложения" width="370"
+                                    height="294">
+                            </picture>
+
                             <div class="activity__subtitle">Десктопные приложения</div>
                         </div>
                     </li>
-                    <li class="card-set__item">
-                        <div class="activity__img">
-                            <img src="./images/activity/phone.jpg" alt="телефон" width="370" height="294">
+                    <li class="activity__item">
+                        <div class=" activity__img">
+
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/activity2_lg.jpg 1x, ./images/activity/activity2_lg@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/activity/activity2_md.jpg 1x, ./images/activity/activity2_md@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/activity/activity2_sm.jpg 1x, ./images/activity/activity2_sm@2x.jpg 2x"
+                                    type="image/jpg">
+                                <img src="./images/activity/activity2_sm.jpg" alt="Мобильные приложения" width="370"
+                                    height="294">
+                            </picture>
+
                             <div class="activity__subtitle">Мобильные приложения</div>
                         </div>
                     </li>
-                    <li class="card-set__item">
-                        <div class="activity__img">
-                            <img src="./images/activity/tab.jpg" alt="планшет" width="370" height="294">
+                    <li class="activity__item">
+                        <div class=" activity__img">
+
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/activity3_lg.jpg 1x, ./images/activity/activity3_lg@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/activity/activity3_md.jpg 1x, ./images/activity/activity3_md@2x.jpg 2x"
+                                    type="image/jpg">
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/activity/activity3_sm.jpg 1x, ./images/activity/activity_sm@2x.jpg 2x"
+                                    type="image/jpg">
+                                <img src="./images/activity/activity3_sm.jpg" alt="Дизайнерские решения" width="370"
+                                    height="294">
+                            </picture>
+
                             <div class="activity__subtitle">Дизайнерские решения</div>
                         </div>
                     </li>
@@ -212,9 +252,22 @@
             <div class="container">
 
                 <h2 class="team__title">Наша команда</h2>
-                <ul class="team__list card-set">
-                    <li class="team__item card-set__item"><img src="./images/team/photo1.jpg" alt="Игорь Демьяненко"
-                            width="270" height="260">
+                <ul class="team__list">
+                    <li class="team__item">
+
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/photo1_lg.jpg 1x, ./images/team/photo1_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/photo1_md.jpg 1x, ./images/team/photo1_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/photo1_sm.jpg 1x, ./images/team/photo1_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img src="./images/team/photo1_sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+                        </picture>
+
                         <div class="team__person">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team__position">Product Designer</p>
@@ -254,8 +307,21 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item card-set__item"><img src="./images/team/photo2.jpg" alt="Ольга Репина"
-                            width="270" height="260">
+                    <li class="team__item">
+
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/photo2_lg.jpg 1x, ./images/team/photo2_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/photo2_md.jpg 1x, ./images/team/photo2_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/photo2_sm.jpg 1x, ./images/team/photo2_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img src="./images/team/photo2_sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+                        </picture>
+
                         <div class="team__person">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="team__position">Frontend Developer</p>
@@ -295,8 +361,21 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item card-set__item"><img src="./images/team/photo3.jpg" alt="Николай Тарасов"
-                            width="270" height="260">
+                    <li class="team__item">
+
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/photo3_lg.jpg 1x, ./images/team/photo3_lg@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/photo3_md.jpg 1x, ./images/team/photo3_md@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/photo3_sm.jpg 1x, ./images/team/photo3_sm@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/team/photo3_sm.jpg" alt="Николай Тарасов" width="450" height="460">
+                        </picture>
+
                         <div class="team__person">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="team__position">Marketing</p>
@@ -336,8 +415,21 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item card-set__item"><img src="./images/team/photo4.jpg" alt="Михаил Ермаков"
-                            width="270" height="260">
+                    <li class="team__item">
+
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/photo4_lg.jpg 1x, ./images/team/photo4_lg@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/photo4_md.jpg 1x, ./images/team/photo4_md@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/photo4_sm.jpg 1x, ./images/team/photo4_sm@2x.jpg 2x"
+                                type="image/jpg">
+                            <img src="./images/team/photo4_sm.jpg" alt="Михаил Ермаков" width="450" height="460">
+                        </picture>
+
                         <div class="team__person">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="team__position">UI Designer</p>
@@ -388,43 +480,43 @@
             <div class="container">
 
                 <h2 class="regular__title">Постоянные клиенты</h2>
-                <ul class="regular__list card-set">
-                    <li class="card-set__item">
+                <ul class="regular__list">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-1">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="card-set__item">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-2">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="card-set__item">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-3">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="card-set__item">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-4">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="card-set__item">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-5">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="card-set__item">
+                    <li class="regular__item">
                         <a class="regular__link" href="" target="_blank" rel="noopener noreferrer" aria-label="logo-6">
                             <svg class="regular__icon" width="106" height="60">
                                 <use href="./images/icons.svg#logo-6"></use>
@@ -599,6 +691,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 

@@ -1,16 +1,34 @@
 .footer-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+
+.footer-form__label {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-form__input {
     color: var(--rpimary-color);
     padding-left: 16px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .modal-form {
@@ -33,10 +51,15 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .modal-label {

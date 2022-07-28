@@ -5,7 +5,6 @@
 // base styles
 @import "./base/common";
 @import "./base/reset";
-@import "./base/card-set";
 
 // components styles
 @import "./components/container";
@@ -24,6 +23,7 @@
 @import "./components/portfolio-cards";
 @import "./components/checkbox";
 @import "./components/agreement";
+@import "./components/mobile-menu";
 
 // loyauts
 @import "./layouts/header";

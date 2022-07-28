@@ -14,7 +14,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
@@ -24,6 +24,53 @@
         <div class="container header-container">
 
             <a href="./index.html" class="logo" lang="en">Web<span class="logo-header">Studio</span></a>
+
+            <button class="mobile-menu-button" type="button" data-menu-button>
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use class="mobile-menu-burger" href="./images/icons.svg#icon-burger"></use>
+                    <use class="mobile-menu-close" href="./images/icons.svg#burger-close"></use>
+                </svg>
+            </button>
+
+
+
+            <div class="mobile-menu" data-menu>
+                <ul class="mobile-menu-nav">
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link current" href="">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link" href="">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu-contacts">
+                    <li class="mobile-menu-contacts-item">
+                        <a class="mobile-menu-contacts-link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contacts-item">
+                        <a class="mobile-menu-contacts-link" href="emailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu-socials">
+                    <li class="mobile-menu-social-item">
+                        <a class="mobile-menu-social-link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-social-item">
+                        <a class="mobile-menu-social-link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-social-item">
+                        <a class="mobile-menu-social-link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-social-item">
+                        <a class="mobile-menu-social-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
 
             <nav class="main-nav">
                 <ul class="main-nav__list">
@@ -88,13 +135,25 @@
                 </ul>
 
                 <!--csrds-->
-                <ul class="portfolio-card card-set">
-                    <li class="portfolio-card__item card-set__item">
+                <ul class="portfolio-card">
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/technokriak.jpg" alt="Технокряк" width="370"
-                                    height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio1_lg.jpg 1x, ./images/portfolio/portfolio1_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio1_md.jpg 1x, ./images/portfolio/portfolio1_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio1_sm.jpg 1x, ./images/portfolio/portfolio1_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio1_sm.jpg" alt="Технокряк" width="450"
+                                        height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -112,11 +171,24 @@
                         </a>
 
                     </li>
-                    <li class="portfolio-card__item card-set__item">
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/basket.jpg" alt="Баскетбол" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio2_lg.jpg 1x, ./images/portfolio/portfolio2_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio2_md.jpg 1x, ./images/portfolio/portfolio2_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio2_sm.jpg 1x, ./images/portfolio/portfolio2_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio2_sm.jpg" alt="Постер New Orlean vs Golden Star"
+                                        width="450" height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -133,11 +205,25 @@
                                 <p class="portfolio-card__type">Дизайн</p>
                             </div>
                         </a>
-                    <li class="portfolio-card__item card-set__item">
+                    </li>
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/seafood.jpg" alt="Ресторан" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio3_lg.jpg 1x, ./images/portfolio/portfolio3_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio3_md.jpg 1x, ./images/portfolio/portfolio3_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio3_sm.jpg 1x, ./images/portfolio/portfolio3_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio3_sm.jpg" alt="Ресторан Seafood" width="450"
+                                        height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -153,11 +239,26 @@
                                 <p class="portfolio-card__type">Приложение</p>
                             </div>
                         </a>
-                    <li class="portfolio-card__item card-set__item">
+                    </li>
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/headphone.jpg" alt="Наушники" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio4_lg.jpg 1x, ./images/portfolio/portfolio4_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio4_md.jpg 1x, ./images/portfolio/portfolio4_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio4_sm.jpg 1x, ./images/portfolio/portfolio4_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio4_sm.jpg" alt="Проект Prime" width="450"
+                                        height="294">
+                                </picture>
+
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -174,11 +275,24 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-card__item card-set__item">
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/boxes.jpg" alt="Коробки" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio5_lg.jpg 1x, ./images/portfolio/portfolio5_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio5_md.jpg 1x, ./images/portfolio/portfolio5_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio5_sm.jpg 1x, ./images/portfolio/portfolio5_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio5_sm.jpg" alt="Проект Boxes" width="450"
+                                        height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -195,11 +309,23 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-card__item card-set__item">
-
+                    <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/screen.jpg" alt="Монитор" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio6_lg.jpg 1x, ./images/portfolio/portfolio6_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio6_md.jpg 1x, ./images/portfolio/portfolio6_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio6_sm.jpg 1x, ./images/portfolio/portfolio6_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio6_sm.jpg" alt="Inspiration has no Borders"
+                                        width="450" height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -215,11 +341,26 @@
                                 <p class="portfolio-card__type">Веб-сайт</p>
                             </div>
                         </a>
-                    <li class="portfolio-card__item card-set__item">
+                    </li>
+                    <li class="portfolio-card__item">
 
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/book.jpg" alt="Книга" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio7_lg.jpg 1x, ./images/portfolio/portfolio7_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio7_md.jpg 1x, ./images/portfolio/portfolio7_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio7_sm.jpg 1x, ./images/portfolio/portfolio7_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio7_sm.jpg" alt="Издание Limited Edition"
+                                        width="450" height="294">
+                                </picture>
+
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
                                         разным
@@ -235,11 +376,23 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-card__item card-set__item">
+                    <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
-
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/lab-el-tag.jpg" alt="Лейба" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio8_lg.jpg 1x, ./images/portfolio/portfolio8_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio8_md.jpg 1x, ./images/portfolio/portfolio8_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio8_sm.jpg 1x, ./images/portfolio/portfolio8_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio8_sm.jpg" alt="Проект LAB" width="450"
+                                        height="294">
+                                </picture>
 
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
@@ -256,10 +409,24 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-card__item card-set__item">
+                    <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__data">
-                                <img src="images/portfolio-img/laptop.jpg" alt="Ноутбук" width="370" height="294">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio9_lg.jpg 1x, ./images/portfolio/portfolio9_lg@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio9_md.jpg 1x, ./images/portfolio/portfolio9_md@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio9_sm.jpg 1x, ./images/portfolio/portfolio9_sm@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="images/portfolio/portfolio9_sm.jpg" alt="Growing Business" width="450"
+                                        height="294">
+                                </picture>
+
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay__text">Ресурс предлагает комплексные предложения с
                                         разным
@@ -366,6 +533,8 @@
         </div>
 
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 

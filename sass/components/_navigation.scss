@@ -1,8 +1,18 @@
+.main-nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .main-nav__list {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 93px;
+    }
 }
 
 .main-nav__list .main-nav__item:not(:last-child) {

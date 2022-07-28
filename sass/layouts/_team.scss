@@ -1,8 +1,9 @@
 .team {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: var(--second-section-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
 }
 
-.team__list {
-    --items: 4;
-}

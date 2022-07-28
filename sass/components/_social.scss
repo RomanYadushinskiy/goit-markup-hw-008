@@ -37,6 +37,19 @@
     fill: var(--rpimary-color);
 }
 
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        margin-bottom: 0;
+    }
+}
+
 .footer-social__list {
     display: flex;
     margin-top: 0;

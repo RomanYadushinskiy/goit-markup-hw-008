@@ -1,14 +1,19 @@
 .hero__title {
-    margin-left: 237px;
-    margin-right: 237px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     color: var(--rpimary-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .feutures-title {
@@ -33,31 +38,43 @@
 }
 
 .team__title {
-    padding-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 30px;
 
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17px;
+    font-size: 28px;
+    line-height: 1.178x;
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .regular__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .footer-social__title,
 .footer-mail__title {
-    margin-top: 15px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;

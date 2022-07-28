@@ -3,10 +3,24 @@
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .nav-contacts .nav-contacts__item:not(:last-child) {
-    margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+         margin-right: 50px;
+    }
 }
 
 .nav-contacts__link {
@@ -17,8 +31,8 @@
 
     color: var(--text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
 
@@ -28,6 +42,16 @@
     &:focus {
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14
+    }
 }
 
 .nav-contacts__icon {
@@ -36,17 +60,39 @@
 }
 
 .footer-contacts {
-    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
 }
 
 .footer-contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
 }
 
 .footer-contacts__adress {
     margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: var(--rpimary-color);
     font-style: normal;
@@ -54,6 +100,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-contacts__item {
